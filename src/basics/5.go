@@ -2,13 +2,12 @@ package main
 
 import "fmt"
 
-func split(sum int) (x, y int) {
-	x = sum * 8 / 9
-	y = sum - x
-	return
-}
+var c, golang bool
 
 func main() {
-	fmt.Println(split(17))
+	var i int
+	var nilChannel chan int
+	channel := make(chan int)
+	fmt.Print(i, c, golang, nilChannel, channel)
 }
 
